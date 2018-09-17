@@ -1,0 +1,33 @@
+.header {
+  font-family: "Georgia", serif;
+  width: 60%;
+  margin: 0 auto;
+}
+
+h1 {
+  color: darkgreen;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+img {
+  width: 300px;
+  height: 300px;
+}
+p {
+  line-height: 19px;
+}
+
+span {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
