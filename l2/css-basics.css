@@ -1,0 +1,65 @@
+/* This is my css */
+h1 {
+  color: green;
+  opacity: 0.5;
+}
+
+span {
+  color: red;
+}
+
+/* .para {
+  background-color: yellow;
+} */
+#para1 {
+  color: blue;
+}
+
+#para2 {
+  color: green;
+}
+
+#para3 {
+  color: purple;
+}
+
+#para {
+  color: red;
+}
+
+/* div {
+  color: orange;
+  background-color: black;
+  text-align: center;
+} */
+/* ul.presidents {
+  color: red;
+  list-style-type: square;
+}
+
+div, p {
+  background-color: blue;
+} */
+.paragraph:nth-child(even) {
+  background-color: orange;
+}
+
+ul.nav {
+  list-style: none;
+  padding: 10px;
+  background-color: black;
+}
+
+ul.nav li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+a:hover {
+  background-color: orange;
+}
