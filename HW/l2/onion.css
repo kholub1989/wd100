@@ -1,33 +1,35 @@
-.header {
-  font-family: "Georgia", serif;
-  width: 60%;
-  margin: 0 auto;
-}
+ .header {
+   font-family: "Georgia", serif;
+   width: 60%;
+   margin: 0 auto;
+ }
 
-h1 {
-  color: darkgreen;
-  text-align: center;
-}
+ h1 {
+   color: darkgreen;
+   text-align: center;
+ }
 
-h2 {
-  text-align: center;
-}
-img {
-  width: 300px;
-  height: 300px;
-}
-p {
-  line-height: 19px;
-}
+ h2 {
+   text-align: center;
+ }
 
-span {
-  text-transform: uppercase;
-}
+ img {
+   width: 300px;
+   height: 300px;
+ }
 
-a {
-  text-decoration: none;
-}
+ p {
+   line-height: 19px;
+ }
 
-a:hover {
-  text-decoration: underline;
-}
+ span {
+   text-transform: uppercase;
+ }
+
+ a {
+   text-decoration: none;
+ }
+
+ a:hover {
+   text-decoration: underline;
+ }
