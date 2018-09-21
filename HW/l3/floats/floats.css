@@ -1,0 +1,12 @@
+img {
+  width: 200px;
+  float: left;
+}
+
+#column1, #column2 {
+  width: 45%;
+  height: 400px;
+  border: 1px solid black;
+  float: left;
+  /* display: inline-block; */
+}
