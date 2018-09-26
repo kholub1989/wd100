@@ -1,0 +1,26 @@
+#squeare,
+#circle {
+  width: 200px;
+  height: 200px;
+}
+
+#squeare {
+  display: inline-block;
+  background-color: #FFB6C1;
+  border-left: 20px solid red;
+  border-right: 20px dashed blue;
+  border-top: 20px groove yellow;
+  border-bottom: 20px dotted green;
+
+}
+
+#circle {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #ADD8E6;
+  border-left: 20px groove red;
+  border-right: 20px dashed blue;
+  border-top: 20px solid gold;
+  border-bottom: 20px dotted green;
+
+}
