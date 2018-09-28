@@ -26,6 +26,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* === HEADER STARTS === */
 .header-title {
   display: flex;
@@ -118,10 +123,10 @@ a {
 
 /* === HEADER ENDS === */
 /* === MAIN STARTS === */
-
 .skill-set span:first-child {
   background: white;
 }
+
 .skill-set span {
   border-radius: 7px;
   background: #ddd;
@@ -197,6 +202,17 @@ footer {
 
 .social-button:hover {
   background-color: #e74246;
+  transition: all 200ms ease-in;
+}
+
+.contact-mail a,
+.contact-mobile a {
+  color: black;
+}
+
+.contact-mail a:hover,
+.contact-mobile a:hover {
+  color: #e74246;
   transition: all 200ms ease-in;
 }
 
