@@ -3,8 +3,13 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
+  /* width: 80%;
+  margin: 0 auto; */
 }
 
+/* div {
+  border: 1px solid pink;
+} */
 .visually-hidden:not(:focus):not(:hover), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
@@ -80,6 +85,18 @@ img {
   background-image: url("../img/home.svg");
 }
 
+.main-nav-gallery::after {
+  content: "";
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 32px;
+  height: 32px;
+  margin-top: -65px;
+  margin-left: -65px;
+  background-image: url("../img/camera.svg");
+}
+
 .main-nav-info::after {
   content: "";
   position: relative;
@@ -90,18 +107,6 @@ img {
   margin-top: -65px;
   margin-left: -65px;
   background-image: url("../img/info.svg");
-}
-
-.main-nav-briefcase::after {
-  content: "";
-  position: relative;
-  top: 50%;
-  left: 50%;
-  width: 32px;
-  height: 32px;
-  margin-top: -65px;
-  margin-left: -65px;
-  background-image: url("../img/briefcase.svg");
 }
 
 .main-nav-mail::after {
@@ -123,6 +128,11 @@ img {
 
 /* === HEADER ENDS === */
 /* === MAIN STARTS === */
+.skill-set {
+  text-align: center;
+  padding: 0;
+}
+
 .skill-set span:first-child {
   background: white;
 }
@@ -130,17 +140,18 @@ img {
 .skill-set span {
   border-radius: 7px;
   background: #ddd;
-  padding: 0 5px;
 }
 
 /* === MAIN ENDS === */
 /* === FOOTER STARTS === */
-footer {
+.main-social,
+.main-social-webpage {
   background-color: #c0c0c0;
-  text-align: center;
 }
 
 .main-social {
+  background-color: #c0c0c0;
+  text-align: center;
   display: flex;
   justify-content: center;
   padding-top: 10px;
@@ -152,6 +163,17 @@ footer {
   width: 300px;
   margin: 0;
   padding: 0;
+}
+
+.main-social-webpage {
+  text-align: center;
+}
+
+.form-control {
+  border-radius: 5px;
+  border: 1px solid #363636;
+  border-bottom-width: 3px;
+  padding: 5px;
 }
 
 .social-button {
