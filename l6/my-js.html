@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My javascript Besics</title>
+</head>
+
+<body>
+
+  <div onclick="change()" id="el">CHANGE ME</div>
+   <div id="result"></div>
+
+  <script type="text/javascript" src="my-js.js"></script>
+  <script type="text/javascript">
+    // alert("Woohoo: javascript!");
+
+    console.log("This is an output to the console.");
+
+    function change() {
+      document.getElementById('el').innerHTML = "Hello World!";
+    }
+  </script>
+
+</body>
+
+</html>
