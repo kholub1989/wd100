@@ -98,8 +98,6 @@ function announce(k) {
 console.log(announce(name));
 
 
-
-
 // var name = prompt("Say your name");
 // function announce(k) {
 //   return "Your name: " + k
@@ -115,7 +113,6 @@ function announce(q) {
   return "Your prize: " + q
 }
 alert(announce(door1))
-
 
 
 // function winAprize(door) {
