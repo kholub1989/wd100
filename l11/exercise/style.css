@@ -1,0 +1,13 @@
+div{
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  border: 1px solid white;
+}
+
+h1 {
+  /* display: none; */
+  color: red;
+  text-align: center;
+}
