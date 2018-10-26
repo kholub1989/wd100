@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Animated Pop-up ad</title>
+  <style media="screen">
+    #ad {
+      width: 200px;
+      height: 120px;
+      background-color: red;
+      position: fixed;
+      font-size: 30px;
+      text-align: center;
+      top: 200px;
+      left: -230px;
+      box-shadow: 5px 5px grey;
+      animation: move 4s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes move {
+      0% {
+        left: -230px;
+      }
+
+      50% {
+        left: 40%;
+        transform: rotate(0deg);
+      }
+
+      100% {
+        left: 40%;
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="ad"> Books For sale <br>
+    <a href="https://www.amazon.com/">Amazon</a><br>
+    <button id="btn" type="button" name="button">close</button>
+  </div>
+
+  <script type="text/javascript">
+    btn.onclick = function() {
+      ad.style.display = "none"
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Class Exercise 2</title>
+	<style type="text/css">
+		img{
+			width: 200px;
+		}
+
+		#box{
+			display: none;
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100vh;
+			background-color: rgba(0,0,0, 0.7);
+			border-radius: 0;
+		}
+
+		#pic2{
+			display: block;
+			margin: 0 auto;
+			margin-top: 140px;
+			border-radius: 25px;
+			width: 300px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="box">
+		<img src="" id="pic2">
+		<p id="caption"></p>
+	</div>
+</div>
+
+
+<div>
+	Date: <span id="mydate"></span>
+</div>
+<div id="pics">
+	<img id="pic" src="https://vetstreet.brightspotcdn.com/dims4/default/f6e3702/2147483647/thumbnail/180x180/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F17%2Fa85b40b3a511e092fe0050568d634f%2Ffile%2Fhub-cats-kitten.jpg" title="Mike">
+	<img src="https://pbs.twimg.com/profile_images/378800000532546226/dbe5f0727b69487016ffd67a6689e75a_400x400.jpeg" title="Joe">
+	<img src="http://r.ddmcdn.com/s_f/o_1/cx_462/cy_245/cw_1349/ch_1349/w_720/APL/uploads/2015/06/caturday-shutterstock_149320799.jpg" title="Lucy">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg" title="George">
+</div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+		<script type="text/javascript">
+			this.onclick = function(e){
+				if(e.target.getAttribute("src")){
+					$("#box").fadeToggle()
+					var address = e.target.getAttribute("src")
+					$("#pic2").attr("src", address)
+				}
+			}
+
+			let d = new Date()
+			d = String(d)
+			d = d.slice(0, 15)
+			$("#mydate").html(d)
+		</script>
+</body>
+</html>
