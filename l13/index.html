@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Digital Clock</title>
+
+</head>
+
+<body>
+  <h1 style="color: white;">Digital Clock</h1>
+
+  <p id="clock" style="font-size: 40px; color: white;"></p>
+
+  <script type="text/javascript">
+    let s = "Hello World"
+    let h = s.slice(0, 5)
+    console.log(h)
+    let w = s.slice(6, 11)
+    console.log(w)
+
+    // let d = new Date()
+    // console.log(d.toLocaleString())
+    // let local = d.toLocaleString()
+    // console.log(local.slice(12,))
+
+
+    // setInterval(function() {
+    //   let d = new Date()
+    //   let s = String(d)
+    //   s = s.slice(16, 24)
+    //   clock.innerHTML = s
+    // }, 1000)
+
+
+    setInterval(function() {
+      let d = new Date()
+      let s = String(d)
+      s = s.slice(16, 24)
+      clock.innerHTML = s
+      let rr = s.slice(0,2)
+      console.log(rr)
+      let gg = s.slice(3,5)
+      let bb = s.slice(6,9)
+      // console.log(gg)
+
+      document.body.style.backgroundColor = "#" + rr + gg + bb
+
+    }, 1000)
+
+  </script>
+</body>
+
+</html>
