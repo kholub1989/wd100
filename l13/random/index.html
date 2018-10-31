@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Random</title>
+
+  <style media="screen">
+    /* button {
+      width: 200px;
+      height: 200px;
+      border: 3px solid black;
+      border-radius: 50%;
+      background-color: silver;
+      font-size: 30px;
+    } */
+  </style>
+</head>
+<body>
+
+  <button id="candy">Get A Candy</button>
+  <br>
+  <p id="prize"></p>
+
+<button id="colors">Pick A Color</button>
+<br>
+<br>
+
+
+<div>
+  <h1>Guess a number</h1>
+Enter a number:<input id="enter" type="number">
+<br>
+<br>
+<br>
+<button id="btn">Submit</button>
+
+<p id="result"></p>
+</div>
+
+  <script type="text/javascript">
+
+let secret = Math.floor(Math.random()*11)
+
+btn.onclick = function() {
+  let myenter = document.querySelector("#enter").value
+  if (myenter == secret) {
+    result.innerHTML = "Woohoo!! You got it!!"
+  }else {
+    result.innerHTML = "WRONG!!, Try again!!!"
+  }
+}
+console.log(secret)
+
+
+
+
+
+
+
+    // let sack = ["Kitkat", "M&M", "Rainbow", "Skitles"]
+    //
+    // let colorsArray = ["green", "blue", "red", "yellow"]
+    //
+    // candy.onclick = function() {
+    //   let randomNumber = Math.floor(Math.random()*sack.length)
+    //   console.log(randomNumber)
+    //
+    //   prize.innerHTML = sack[randomNumber]
+    // }
+    //
+    // colors.onclick = function() {
+    //   let randomNumber = Math.floor(Math.random()*sack.length)
+    //   document.body.style.backgroundColor = colorsArray[randomNumber]
+    // }
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>

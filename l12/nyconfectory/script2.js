@@ -24,7 +24,7 @@ var sugarCount = 0, chocoCount = 0, lemonCount = 0
 
 
 
-  $('#add-sugar')||('#add-choco')||('#add-lemon').on('click', function() {
+  $('span[id]').on('click', function() {
     sugarCount++
     chocoCount++
     lemonCount++
@@ -34,7 +34,7 @@ var sugarCount = 0, chocoCount = 0, lemonCount = 0
     getSugar = Cookies.get('sugarCookie')
     getChoco = Cookies.get('chocoCookie')
     getLemon = Cookies.get('lemonCookie')
-    $('#sugar-count')||('#choco-count')||('#lemon-count').html(getSugar, getChoco, getLemon)
+    $('button[id]').html(getSugar, getChoco, getLemon)
   })
 
 
